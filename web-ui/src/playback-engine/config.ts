@@ -36,7 +36,7 @@ export interface PlayerConfig {
 }
 
 export const defaultConfig: PlayerConfig = {
-  liveSync: true,
+  liveSync: false, // 关闭变速追直播:消除 1.2×→1.0× 变速顿挫(家庭场景顺滑优先于低延迟)
   liveSyncMaxLatency: 3,
   liveSyncTargetLatency: 1.5,
   liveSyncPlaybackRate: 1.2,
